@@ -51,7 +51,7 @@ namespace TrabalhoLp2
             }
             else
             {
-                MessageBox.Show("Credenciais inválidas.");
+                MessageBox.Show("Credenciais inválidas! Tente novamente.");
             }
         }
     }
