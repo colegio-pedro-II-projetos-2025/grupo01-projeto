@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrabalhoLp2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b11e1d1b9feee918878d7ceea2a1ef4a54c2a67c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrabalhoLp2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrabalhoLp2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

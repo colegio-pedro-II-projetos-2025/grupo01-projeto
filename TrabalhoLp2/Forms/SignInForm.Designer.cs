@@ -61,12 +61,14 @@
             // 
             // btn_cadastrar
             // 
+            btn_cadastrar.BackColor = Color.FromArgb(0, 192, 0);
+            btn_cadastrar.Font = new Font("Bauhaus 93", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_cadastrar.Location = new Point(163, 324);
             btn_cadastrar.Name = "btn_cadastrar";
-            btn_cadastrar.Size = new Size(213, 62);
+            btn_cadastrar.Size = new Size(220, 62);
             btn_cadastrar.TabIndex = 1;
-            btn_cadastrar.Text = "cadastrar";
-            btn_cadastrar.UseVisualStyleBackColor = true;
+            btn_cadastrar.Text = "CADASTRAR";
+            btn_cadastrar.UseVisualStyleBackColor = false;
             btn_cadastrar.Click += btn_cadastrar_Click_2;
             // 
             // lbl_cadastrar_nome
@@ -74,9 +76,10 @@
             lbl_cadastrar_nome.AutoSize = true;
             lbl_cadastrar_nome.Location = new Point(153, 102);
             lbl_cadastrar_nome.Name = "lbl_cadastrar_nome";
-            lbl_cadastrar_nome.Size = new Size(38, 15);
+            lbl_cadastrar_nome.Size = new Size(40, 15);
             lbl_cadastrar_nome.TabIndex = 2;
-            lbl_cadastrar_nome.Text = "nome";
+            lbl_cadastrar_nome.Text = "Nome";
+            lbl_cadastrar_nome.Click += lbl_cadastrar_nome_Click;
             // 
             // lbl_cadastrar_email
             // 
@@ -85,7 +88,7 @@
             lbl_cadastrar_email.Name = "lbl_cadastrar_email";
             lbl_cadastrar_email.Size = new Size(36, 15);
             lbl_cadastrar_email.TabIndex = 2;
-            lbl_cadastrar_email.Text = "email";
+            lbl_cadastrar_email.Text = "Email";
             // 
             // lbl_atention
             // 
@@ -100,9 +103,9 @@
             lbl_cadastrar_senha.AutoSize = true;
             lbl_cadastrar_senha.Location = new Point(151, 226);
             lbl_cadastrar_senha.Name = "lbl_cadastrar_senha";
-            lbl_cadastrar_senha.Size = new Size(38, 15);
+            lbl_cadastrar_senha.Size = new Size(39, 15);
             lbl_cadastrar_senha.TabIndex = 2;
-            lbl_cadastrar_senha.Text = "senha";
+            lbl_cadastrar_senha.Text = "Senha";
             // 
             // SignInForm
             // 

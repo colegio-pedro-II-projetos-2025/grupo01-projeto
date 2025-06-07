@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             panel1 = new Panel();
             lbl_login_senha = new Label();
             lbl_login_email = new Label();
@@ -36,6 +38,8 @@
             txt_lgn_email = new TextBox();
             btn_login = new Button();
             txt_lgn_senha = new TextBox();
+            imageList1 = new ImageList(components);
+            label1 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -95,6 +99,7 @@
             lbl_login.Size = new Size(109, 32);
             lbl_login.TabIndex = 1;
             lbl_login.Text = "Login";
+            lbl_login.Click += lbl_login_Click;
             // 
             // txt_lgn_email
             // 
@@ -123,12 +128,31 @@
             txt_lgn_senha.TabIndex = 0;
             txt_lgn_senha.TextChanged += textBox1_TextChanged;
             // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "SUPER_BATTLE_LOGO.png");
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(205, 47);
+            label1.Name = "label1";
+            label1.Size = new Size(365, 65);
+            label1.TabIndex = 1;
+            label1.Text = "SUPER-BATTLE";
+            label1.Click += label1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(784, 861);
+            ClientSize = new Size(784, 788);
+            Controls.Add(label1);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             ImeMode = ImeMode.Off;
@@ -139,6 +163,7 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -151,5 +176,7 @@
         private TextBox txt_lgn_senha;
         private Label lbl_login_senha;
         private Label lbl_login_email;
+        private ImageList imageList1;
+        private Label label1;
     }
 }

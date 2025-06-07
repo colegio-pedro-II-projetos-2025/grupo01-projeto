@@ -94,5 +94,10 @@ namespace TrabalhoLp2.Forms
             txt_email_cadastro.Text = "";
 
         }
+
+        private void lbl_cadastrar_nome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
